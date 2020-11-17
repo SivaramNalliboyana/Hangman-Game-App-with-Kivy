@@ -1,0 +1,40 @@
+#: import utils kivy.utils
+ScreenManager:
+    HomeScreen:
+        id:home
+        name:'home'
+
+<HomeScreen>:
+    canvas:
+        Color:
+            rgb: utils.get_color_from_hex('#B5D6C3')
+        Rectangle:
+            size: self.size
+            pos: self.pos
+    FloatLayout:
+        Label:
+            text: "Hangman Game"
+            font_size: 30
+            color: 0,0,0,1
+            pos_hint: {'top': 1,'left':1}
+            size_hint: 1,.1
+        Image:
+            source: app.image
+            pos_hint: {'top': .9,'left':1}
+            size_hint: 1,.45
+        Label:
+            text: app.displayword
+            font_size: 35
+            color: 0,0,0,1
+            pos_hint: {'top': .5,'left':1}
+            size_hint: 1,.1
+        ScrollView:
+            pos_hint: {'top':.4,'left':1}
+            size_hint:1 ,.35
+            GridLayout:
+                id: letters
+                cols: 5
+                size_hint_y: None
+                height:self.minimum_height
+                row_default_height: '50dp'
+                row_force_default: True
