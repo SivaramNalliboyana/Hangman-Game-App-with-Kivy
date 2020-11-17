@@ -12,5 +12,5 @@ A full hangman game App with Kivy
 
 
 ## Screenshots
-<img src="screenshots/image1.png" height=400em> <img src="screenshots/image2.png" height=400em>
-<img src="screenshots/image3.png" height=400em>
+<img src="screenshots/image1.PNG" height=400em> <img src="screenshots/image2.PNG" height=400em>
+<img src="screenshots/image3.PNG" height=400em>
